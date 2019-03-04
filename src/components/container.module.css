@@ -4,6 +4,7 @@
     width: 800px;
     margin: 0 auto;
     text-align: left;
+    margin-top: 5%;
 }
 
 .container h1,
@@ -12,5 +13,25 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container .blog em {
+    float: right;
+    font-size: 0.8rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}
+
+.container a:hover {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.container h2 {
+    /* padding: 0; */
+    margin: 0 0 10px 0;
     font-family: 'Poppins', sans-serif;
 }

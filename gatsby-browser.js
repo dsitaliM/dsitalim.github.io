@@ -6,4 +6,4 @@
 
 // You can delete this file if you're not using it
 import "./src/styles/global.css"
-import "./node_modules/prismjs/themes/prism-tomorrow.css"
+import "./node_modules/prismjs/themes/prism.css"

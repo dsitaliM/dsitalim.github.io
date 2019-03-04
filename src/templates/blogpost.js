@@ -11,8 +11,11 @@ const Template = ({ data }) => {
 
   return (
     <Container>
-      <div>
+      <div className="blog">
         <h1>{title}</h1>
+        <em>{date}</em>
+        <br />
+        <br />
         <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Container>
@@ -25,7 +28,7 @@ export const postQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM, DD, YYYY")
+        date(formatString: "DD MMMM, YYYY")
         path
         tags
         excerpt

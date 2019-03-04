@@ -1,23 +1,52 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+// import Layout from "../components/layout";
 import Container from "../components/container"
-import Header from "../components/header"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const IndexPage = ({ data }) => {
+  const { edges } = data.allMarkdownRemark
+  return (
+    <Container>
+      <div>
+        {edges.map(edge => {
+          const { frontmatter } = edge.node
+          return (
+            <div key={frontmatter.path}>
+              <Link to={frontmatter.path}>
+                <h2>{frontmatter.title}</h2>
+              </Link>
+              &nbsp;
+              <small>
+                <em>Published on {frontmatter.date}</em>
+              </small>
+              <br />
+              <p>{frontmatter.excerpt}</p>
+            </div>
+          )
+        })}
+      </div>
+    </Container>
+  )
+}
 
-export default () => (
-  <Container>
-    <div>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Integralis" />
-      <p>
-        GraphQL is an open-source data query and manipulation language for APIs,
-        and a runtime for fulfilling queries with existing data. GraphQL was
-        developed internally.
-      </p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
-  </Container>
-)
+export const query = graphql`
+  query HomePageQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            tags
+            excerpt
+          }
+        }
+      }
+    }
+  }
+`
+
+export default IndexPage
