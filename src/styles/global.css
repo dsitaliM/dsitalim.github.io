@@ -9,6 +9,10 @@ html {
     background-color: white;
 }
 
+body {
+    text-align: center;
+}
+
 /* h1 {
     font-family: 'Poppins', sans-serif;
 }

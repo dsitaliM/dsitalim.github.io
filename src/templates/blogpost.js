@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import Container from "../components/container"
 
+import "katex/dist/katex.min.css"
+
 const Template = ({ data }) => {
   const title = data.markdownRemark.frontmatter.title
   const date = data.markdownRemark.frontmatter.date
