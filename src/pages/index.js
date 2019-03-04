@@ -1,31 +1,36 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-// import Layout from "../components/layout";
 import Container from "../components/container"
+import StyledBackgroundSection from "../components/styledBackground"
 
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <Container>
-      <div>
-        {edges.map(edge => {
-          const { frontmatter } = edge.node
-          return (
-            <div key={frontmatter.path}>
-              <Link to={frontmatter.path}>
-                <h2>{frontmatter.title}</h2>
-              </Link>
-              &nbsp;
-              <small>
-                <em>Published on {frontmatter.date}</em>
-              </small>
-              <br />
-              <p>{frontmatter.excerpt}</p>
-            </div>
-          )
-        })}
-      </div>
-    </Container>
+    // <Header text="rethlogl"></Header>
+    <div>
+      {/* <Header text="rethlogl" /> */}
+      <StyledBackgroundSection />
+      <Container>
+        <div>
+          {edges.map(edge => {
+            const { frontmatter } = edge.node
+            return (
+              <div key={frontmatter.path}>
+                <Link to={frontmatter.path}>
+                  <h2>{frontmatter.title}</h2>
+                </Link>
+                &nbsp;
+                <small>
+                  <em>Published on {frontmatter.date}</em>
+                </small>
+                <br />
+                <p>{frontmatter.excerpt}</p>
+              </div>
+            )
+          })}
+        </div>
+      </Container>
+    </div>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Container from "../components/container"
-
+import StyledBackgroundSection from "../components/styledBackground"
 import "katex/dist/katex.min.css"
 
 const Template = ({ data }) => {
@@ -10,15 +10,21 @@ const Template = ({ data }) => {
   const html = data.markdownRemark.html
 
   return (
-    <Container>
-      <div className="blog">
-        <h1>{title}</h1>
-        <em>{date}</em>
-        <br />
-        <br />
-        <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
-    </Container>
+    <div>
+      <StyledBackgroundSection />
+      <Container>
+        <div className="blog">
+          <h1>{title}</h1>
+          <em>{date}</em>
+          <br />
+          <br />
+          <div
+            className="blogpost"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+      </Container>
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `rethlogl`,
     description: `Personal Blog`,
-    author: `@gatsbyjs`,
+    author: `@crangeglogy`,
   },
   plugins: [
     `gatsby-transformer-remark`,
