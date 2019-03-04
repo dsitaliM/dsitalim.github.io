@@ -11,3 +11,15 @@ Lorem Anim ad Lorem ex amet. Eiusmod ipsum commodo nulla sint do. Consequat ipsu
 $$
 a^2 + b^2 = c^2
 $$
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [`gatsby-remark-prismjs`],
+    },
+  },
+]
+```
