@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 @import url('https://fonts.googleapis.com/css?family=Rubik|Spectral');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 html {
     background-color: white;
@@ -12,6 +14,7 @@ html {
 body {
     text-align: center;
 }
+
 
 /* h1 {
     font-family: 'Poppins', sans-serif;

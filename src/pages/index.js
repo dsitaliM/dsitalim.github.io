@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
     // <Header text="rethlogl"></Header>
     <div>
       {/* <Header text="rethlogl" /> */}
-      <StyledBackgroundSection />
+      <StyledBackgroundSection className="headerImage" />
       <Container>
         <div>
           {edges.map(edge => {

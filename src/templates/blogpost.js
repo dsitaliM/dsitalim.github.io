@@ -11,7 +11,7 @@ const Template = ({ data }) => {
 
   return (
     <div>
-      <StyledBackgroundSection />
+      <StyledBackgroundSection className="headerImage" />
       <Container>
         <div className="blog">
           <h1>{title}</h1>

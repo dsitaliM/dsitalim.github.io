@@ -1,6 +1,10 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import styled from "styled-components"
+import styledCustom from "./styledCustom.module.css"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FaGithub, FaTwitter } from "react-icons/fa"
+import { Link } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
 
@@ -23,16 +27,26 @@ const BackgroundSection = ({ className }) => (
       return (
         <BackgroundImage
           Tag="section"
-          className={className}
+          className={styledCustom.image}
           fluid={imageData}
           backgroundColor={`#040e18`}
         >
-          <h1>Daniel's Blog</h1>
-          <p>About Me</p>
-          <div>
-            <a>Github</a>
-            <a>Twitter</a>
+          <Link to="/">
+            <h1>Daniel's Blog</h1>{" "}
+          </Link>
+
+          <em>"Thinking about things..."</em>
+          <div className="icons">
+            <a href="https://github.com/dsitaliM" target="_blank">
+              <FaGithub size={32} className={styledCustom.icon} />
+            </a>
+            <a href="https://twitter.com/craneglogy" target="_blank">
+              <FaTwitter size={32} className={styledCustom.icon} />
+            </a>
           </div>
+          <br />
+          <br />
+          <br />
         </BackgroundImage>
       )
     }}

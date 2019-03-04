@@ -1,0 +1,51 @@
+.image h1 {
+    color: white;
+    margin-top: 25px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 3.5em;
+}
+
+.image em {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.image {
+    background-color: rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+    color: white;
+}
+
+.icon {
+    margin: 30px 10px 10px 10px;
+    color: white;
+}
+
+/* .icon {
+    color: rgba(0, 0, 0, 0.3)
+} */
+
+.icon:link {
+    color: white;
+}
+
+.icon:visited {
+    color: white;
+}
+
+.icon:hover {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.icon:active {
+    color: white;
+}
+
+.image h1:hover {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+
+
+.image a {
+    text-decoration: none;
+}
