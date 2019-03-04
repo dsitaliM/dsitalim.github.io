@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Container from "../components/container"
 
 const Template = ({ data }) => {
   const title = data.markdownRemark.frontmatter.title
@@ -7,10 +8,12 @@ const Template = ({ data }) => {
   const html = data.markdownRemark.html
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
+    <Container>
+      <div>
+        <h1>{title}</h1>
+        <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </Container>
   )
 }
 

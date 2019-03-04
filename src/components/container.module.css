@@ -1,8 +1,15 @@
 .container {
-    /* margin: 3rem auto; */
-    max-width: 600;
-    margin: 3rem auto;
-    /* font-family: 'Spectral', 'Georgia', 'Times New Roman', 'Times', serif; */
     font-family: 'Rubik', sans-serif;
     font-size: 0.9rem;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.container h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
 }
