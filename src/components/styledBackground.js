@@ -37,10 +37,18 @@ const BackgroundSection = ({ className }) => (
 
           <em>"Thinking about things..."</em>
           <div className="icons">
-            <a href="https://github.com/dsitaliM" target="_blank">
+            <a
+              href="https://github.com/dsitaliM"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub size={32} className={styledCustom.icon} />
             </a>
-            <a href="https://twitter.com/craneglogy" target="_blank">
+            <a
+              href="https://twitter.com/craneglogy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter size={32} className={styledCustom.icon} />
             </a>
           </div>

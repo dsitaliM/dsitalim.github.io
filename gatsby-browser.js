@@ -7,3 +7,4 @@
 // You can delete this file if you're not using it
 import "./src/styles/global.css"
 import "./node_modules/prismjs/themes/prism.css"
+import "katex/dist/katex.min.css"

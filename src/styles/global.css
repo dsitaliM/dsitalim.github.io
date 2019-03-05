@@ -8,19 +8,9 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 html {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.03)
 }
 
 body {
     text-align: center;
 }
-
-
-/* h1 {
-    font-family: 'Poppins', sans-serif;
-}
-
-p,
-a {
-    font-family: 'Roboto', sans-serif;
-} */

@@ -804,6 +804,15 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
+"@matejmazur/react-mathjax@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@matejmazur/react-mathjax/-/react-mathjax-0.1.10.tgz#d902837050a53dbebaa9e732d3e5fce1935f9c26"
+  integrity sha512-0/0Zvm0mAyYEqN0RZyguIKh+iMafLKS0fxTZXBGh2f4Z7ceJPj7/uNm6IaIejhslQIeV/uWuXEesaQy4SOMKQQ==
+  dependencies:
+    load-script "^1.0.0"
+    prop-types "^15.6.0"
+    react "^16.0.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4783,6 +4792,15 @@ gatsby-remark-katex@^3.0.3:
     remark-math "^1.0.3"
     unist-util-visit "^1.3.0"
 
+gatsby-remark-mathjax@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-mathjax/-/gatsby-remark-mathjax-1.0.0.tgz#80629cd3471192f32d75bae9b8b119b8ba9ae27b"
+  integrity sha512-rWRuZGcUvlgNIhHkE/0xXYOR+nfDFBuJ5P8s669UqprTDlk0rfYIyrxGYmQi4Se3LBvrLAkvNQyLSQU+LT3IKA==
+  dependencies:
+    babel-runtime "^6.26.0"
+    remark-math "^1.0.3"
+    unist-util-visit "^1.1.1"
+
 gatsby-remark-prismjs@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.2.4.tgz#712843d06591810a9db068934ad5c908684e7baa"
@@ -6776,6 +6794,11 @@ load-json-file@^2.0.0:
     parse-json "^2.2.0"
     pify "^2.0.0"
     strip-bom "^3.0.0"
+
+load-script@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+  integrity sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ=
 
 loader-fs-cache@^1.0.0:
   version "1.0.1"
@@ -8906,7 +8929,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9176,6 +9199,15 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-mathjax2@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-mathjax2/-/react-mathjax2-0.0.2.tgz#31a8478d0eb45601d26a66c90682360be062724d"
+  integrity sha512-m63PiOej2OTpcgvT4+VAxTr0zxQVfRmmkSD66QSEcQgSh8ryU/oInlnBCpBJRH6Za5GW8N3/pevTuzI+FG6OkA==
+  dependencies:
+    load-script "^1.0.0"
+    prop-types "^15.6.0"
+    react "^16.0.0"
+
 react-side-effect@^1.1.0:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"
@@ -9184,7 +9216,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@^16.8.3:
+react@^16.0.0, react@^16.8.3:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.3.tgz#c6f988a2ce895375de216edcfaedd6b9a76451d9"
   integrity sha512-3UoSIsEq8yTJuSu0luO1QQWYbgGEILm+eJl2QN/VLDi7hL+EN18M3q3oVZwmVzzBJ3DkM7RMdRwBmZZ+b4IzSA==
@@ -11152,7 +11184,7 @@ unist-util-visit-parents@^2.0.0:
   dependencies:
     unist-util-is "^2.1.2"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.3.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.0.tgz#1cb763647186dc26f5e1df5db6bd1e48b3cc2fb1"
   integrity sha512-FiGu34ziNsZA3ZUteZxSFaczIjGmksfSgdKqBfOejrrfzyUy5b7YrlzT1Bcvi+djkYDituJDy2XB7tGTeBieKw==

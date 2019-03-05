@@ -3,7 +3,9 @@ path: "/first-post"
 date: "2019-03-04"
 title: "Spectroscopy for Soil Analysis"
 tags: ["gatsby", "2018"]
-excerpt: "Lorem Anim ad Lorem ex amet. Eiusmod ipsum commodo nulla sint do. Consequat ipsum aliqua laboris consequat magna. Occaecat esse exercitation occaecat duis aute qui consectetur aute laborum veniam veniam..."
+excerpt: "# f(x) = \\int_{-\\infty}^\\infty
+  \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}
+  \\,d\\xi #"
 ---
 
 Lorem Anim ad Lorem ex amet. Eiusmod ipsum commodo nulla sint do. Consequat ipsum aliqua laboris consequat magna. Occaecat esse exercitation occaecat duis aute qui consectetur aute laborum veniam veniam occaecat. Sunt eu incididunt mollit fugiat quis quis. Proident laborum qui voluptate in elit est quis ut sint ut. Consequat nisi commodo sunt voluptate officia nisi veniam occaecat amet nulla.
