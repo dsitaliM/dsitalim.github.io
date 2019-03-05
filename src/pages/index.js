@@ -27,11 +27,12 @@ const IndexPage = ({ data }) => {
                 </small>
                 <br />
                 <div style={divStyle}>
-                  <p>{frontmatter.excerpt.split("#")[0]}</p>
+                  <p style={parStyleL}>{frontmatter.excerpt.split("#")[0]}</p>{" "}
                   <Context>
                     <Node inline>{frontmatter.excerpt.split("#")[1]}</Node>
                   </Context>
-                  <p>{frontmatter.excerpt.split("#")[2]}</p>
+                  <br />
+                  <p style={parStyleR}>{frontmatter.excerpt.split("#")[2]}</p>
                 </div>
               </div>
             )
@@ -40,105 +41,6 @@ const IndexPage = ({ data }) => {
       </Container>
     </div>
   )
-  // console.log(edges)
-  // edges.forEach(edge => {
-  //   if (edge.node.frontmatter.excerpt.indexOf("#") > 0) {
-  //     return (
-  //       <div>
-  //         <StyledBackgroundSection className="headerImage" />
-  //         <Container>
-  //           <div>
-  //             {edges.map(edge => {
-  //               const { frontmatter } = edge.node
-  //               return (
-  //                 <div key={frontmatter.path}>
-  //                   <Link to={frontmatter.path}>
-  //                     <h2>{frontmatter.title}</h2>
-  //                   </Link>
-  //                   &nbsp;
-  //                   <small>
-  //                     <em>Published on {frontmatter.date}</em>
-  //                   </small>
-  //                   <br />
-  //                   <div style={divStyle}>
-  //                     <p>{frontmatter.excerpt.split("#")[0]}</p>
-  //                     <Context>
-  //                       <Node inline>{frontmatter.excerpt.split("#")[1]}</Node>
-  //                     </Context>
-  //                     <p>{frontmatter.excerpt.split("#")[2]}</p>
-  //                   </div>
-  //                 </div>
-  //               )
-  //             })}
-  //           </div>
-  //         </Container>
-  //       </div>
-  //     )
-  //   } else {
-  //     return (
-  //       <div>
-  //         <StyledBackgroundSection className="headerImage" />
-  //         <Container>
-  //           <div>
-  //             {edges.map(edge => {
-  //               const { frontmatter } = edge.node
-  //               return (
-  //                 <div key={frontmatter.path}>
-  //                   <Link to={frontmatter.path}>
-  //                     <h2>{frontmatter.title}</h2>
-  //                   </Link>
-  //                   &nbsp;
-  //                   <small>
-  //                     <em>Published on {frontmatter.date}</em>
-  //                   </small>
-  //                   <br />
-  //                   {/* <div style={divStyle}>
-  //                     <p>{frontmatter.excerpt.split("#")[0]}</p>
-  //                     <Context>
-  //                       <Node inline>{frontmatter.excerpt.split("#")[1]}</Node>
-  //                     </Context>
-  //                     <p>{frontmatter.excerpt.split("#")[2]}</p>
-  //                   </div> */}
-  //                 </div>
-  //               )
-  //             })}
-  //           </div>
-  //         </Container>
-  //       </div>
-  //     )
-  //   }
-  // })
-  // return (
-  //   <div>
-  //     <StyledBackgroundSection className="headerImage" />
-  //     <Container>
-  //       <div>
-  //         {edges.map(edge => {
-  //           const { frontmatter } = edge.node
-  //           return (
-  //             <div key={frontmatter.path}>
-  //               <Link to={frontmatter.path}>
-  //                 <h2>{frontmatter.title}</h2>
-  //               </Link>
-  //               &nbsp;
-  //               <small>
-  //                 <em>Published on {frontmatter.date}</em>
-  //               </small>
-  //               <br />
-  //               <div style={divStyle}>
-  //                 <p>{frontmatter.excerpt.split("#")[0]}</p>
-  //                 <Context>
-  //                   <Node inline>{frontmatter.excerpt.split("#")[1]}</Node>
-  //                 </Context>
-  //                 <p>{frontmatter.excerpt.split("#")[2]}</p>
-  //               </div>
-  //             </div>
-  //           )
-  //         })}
-  //       </div>
-  //     </Container>
-  //   </div>
-  // )
 }
 
 export const query = graphql`
@@ -164,8 +66,12 @@ var divStyle = {
   display: "flex",
 }
 
-// var parStyle = {
-//   paddingTop: "7px",
-// }
+var parStyleL = {
+  marginRight: "5px",
+}
+var parStyleR = {
+  marginRight: "5px",
+  marginLeft: "5px",
+}
 
 export default IndexPage
