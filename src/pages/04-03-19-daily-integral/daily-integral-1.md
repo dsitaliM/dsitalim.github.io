@@ -1,6 +1,6 @@
 ---
 path: "/daily-integral-1"
-date: "2019-03-05"
+date: "2019-03-04"
 title: "Daily Integral One"
 tags: ["integrals", "2019", "math"]
 excerpt: "This is #\\int \\frac{dx}{sin(x)}\\# what is up."

@@ -8,7 +8,6 @@ import "katex/dist/katex.min.css"
 
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
-  //const { edges: posts } = data.allMarkdownRemark
   return (
     <div>
       <StyledBackgroundSection className="headerImage" />
@@ -27,7 +26,7 @@ const IndexPage = ({ data }) => {
                 </small>
                 <br />
                 <div style={divStyle}>
-                  <p style={parStyleL}>{frontmatter.excerpt.split("#")[0]}</p>{" "}
+                  <p style={parStyleL}>{frontmatter.excerpt.split("#")[0]}</p>
                   <Context>
                     <Node inline>{frontmatter.excerpt.split("#")[1]}</Node>
                   </Context>
@@ -64,6 +63,9 @@ export const query = graphql`
 `
 var divStyle = {
   display: "flex",
+  marginBottom: "15px",
+  borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+  paddingBottom: "15px",
 }
 
 var parStyleL = {
